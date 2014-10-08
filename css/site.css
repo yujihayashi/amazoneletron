@@ -116,11 +116,13 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
+.site-header .navbar-collapse,
 .box-chamada .plus,
 .media-home .title {
   font-family: 'ralewayheavy', Arial, sans-serif;
   font-weight: normal;
 }
+.box-telefone,
 blockquote footer {
   font-family: 'robotoblack', Arial, sans-serif;
   font-weight: normal;
@@ -133,9 +135,98 @@ ESTRUTURA START
 **********************************************************************************************/
 .extra-header {
   background: url(../imagem/site/bg-header-x.jpg) repeat-x top;
+  margin-bottom: 20px;
 }
 .extra-header .site-header {
   background: url(../imagem/site/bg-header.jpg) no-repeat center top;
+}
+.extra-header .line-1 {
+  height: 113px;
+}
+.extra-header .line-2 {
+  padding-left: 127px;
+}
+.extra-header .navbar {
+  border: 0;
+  margin: 0;
+}
+.extra-header .navbar-brand {
+  height: 112px;
+  margin-left: 0;
+  padding: 9px 0 9px 48px;
+}
+.extra-header .navbar-collapse {
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.extra-header .navbar-collapse .nav > li > a {
+  height: 49px;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+.extra-header .navbar-collapse .nav > li.active > a {
+  border-bottom: 4px solid #98a343;
+}
+.extra-header .navbar-collapse .nav > li + li {
+  background: url(../imagem/site/bg-menu.png) no-repeat left center;
+  padding-left: 4px;
+}
+.extra-header .box-pesquisa {
+  position: relative;
+  overflow: hidden;
+}
+.extra-header .box-pesquisa,
+.extra-header .box-pesquisa .btn,
+.extra-header .box-pesquisa .form-control {
+  height: 32px;
+}
+.extra-header .box-pesquisa .input-group {
+  display: inline-block;
+}
+.extra-header .box-pesquisa .form-control {
+  width: 180px;
+  z-index: 1;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+  border-radius: 50px;
+}
+.extra-header .box-pesquisa .btn {
+  position: absolute;
+  z-index: 2;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  width: 25px;
+  padding: 6px 0;
+}
+.extra-header .box-telefone {
+  line-height: 1;
+  padding-top: 18px;
+  margin-bottom: 18px;
+}
+.extra-header .box-telefone .title,
+.extra-header .box-telefone .desc {
+  display: block;
+}
+.extra-header .box-telefone,
+.extra-header .box-telefone a {
+  color: #FFF;
+}
+.extra-header .box-telefone * {
+  vertical-align: middle;
+}
+.extra-header .box-telefone .title {
+  font-size: 11px;
+}
+.extra-header .box-telefone .desc {
+  font-size: 18px;
+}
+.extra-header .box-telefone .icone {
+  margin-right: 8px;
 }
 .extra-fornecedores {
   background: #f6f6f6;
@@ -210,7 +301,7 @@ CLASSES START
   height: 235px;
   border: 1px solid #e6e6e6;
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .box-chamada .link,
 .box-chamada .imagem,
@@ -252,8 +343,63 @@ CLASSES START
 .box-chamada.chamada-right .desc {
   background: #0eb0df;
 }
+.box-banner {
+  border: 1px solid #e6e6e6;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  margin-bottom: 26px;
+}
+.box-banner,
+.box-banner .lista-banner {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+.box-banner,
+.box-banner .lista-banner,
+.box-banner .lista-banner li {
+  height: 340px;
+}
+.box-banner .lista-banner {
+  white-space: nowrap;
+}
+.box-banner .lista-banner li {
+  position: relative;
+  width: 33.33333333333333%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  padding: 50px 40px;
+}
+.box-banner .lista-banner li + li {
+  border-left: 1px solid #e6e6e6;
+}
+.box-banner .lista-banner li * {
+  white-space: normal;
+}
+.box-banner .lista-banner li .imagem {
+  display: block;
+  height: 110px;
+  margin-bottom: 10px;
+}
+.box-banner .lista-banner li .imagem img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.box-banner .lista-banner li .desc {
+  display: none;
+}
+.box-banner .lista-banner li .plus {
+  width: 48px;
+  height: 48px;
+  display: inline-block;
+  padding: 11px 0;
+}
 .box-banner-horizontal {
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 .imagem {
   display: inline-block;
