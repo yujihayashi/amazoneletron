@@ -95,11 +95,11 @@ NON-RESPONSIVE START
 NON-RESPONSIVE END
 */
 ::selection {
-  background-color: #812d2a;
+  background-color: #98a343;
   color: #FFF;
 }
 ::-moz-selection {
-  background-color: #812d2a;
+  background-color: #98a343;
   color: #FFF;
 }
 small {
@@ -116,7 +116,12 @@ button {
 /*
 FONTS START
 **********************************************************************************************/
-.box-chamada {
+.box-chamada .plus,
+.media-home .title {
+  font-family: 'ralewayheavy', Arial, sans-serif;
+  font-weight: normal;
+}
+blockquote footer {
   font-family: 'robotoblack', Arial, sans-serif;
   font-weight: normal;
 }
@@ -126,6 +131,57 @@ FONTS END
 /*
 ESTRUTURA START
 **********************************************************************************************/
+.extra-header {
+  background: url(../imagem/site/bg-header-x.jpg) repeat-x top;
+}
+.extra-header .site-header {
+  background: url(../imagem/site/bg-header.jpg) no-repeat center top;
+}
+.extra-fornecedores {
+  background: #f6f6f6;
+  border-top: 1px solid #ccc;
+}
+.extra-fornecedores .site-fornecedores {
+  padding: 18px 0 30px;
+}
+.extra-fornecedores .media-heading {
+  color: #a19b9a;
+}
+.extra-footer {
+  background: #a4b048;
+}
+.extra-footer,
+.extra-footer a {
+  color: #FFF;
+}
+.extra-footer .site-footer {
+  position: relative;
+}
+.extra-footer .site-footer .row {
+  position: relative;
+}
+.extra-footer .site-footer .left {
+  height: 100%;
+  position: static;
+}
+.extra-footer .site-footer .right {
+  padding: 15px 0;
+}
+.extra-footer .social-footer {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  top: 0;
+  background: #7a813e;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+.extra-footer .social-footer a {
+  display: inline-block;
+  padding: 10px 8px;
+  vertical-align: middle;
+}
 /**********************************************************************************************
 ESTRUTURA END
 */
@@ -150,6 +206,55 @@ CLASSES START
   -moz-border-radius: 150px;
   border-radius: 150px;
 }
+.box-chamada {
+  height: 235px;
+  border: 1px solid #e6e6e6;
+  position: relative;
+  margin-bottom: 30px;
+}
+.box-chamada .link,
+.box-chamada .imagem,
+.box-chamada .desc,
+.box-chamada .text,
+.box-chamada .plus {
+  display: block;
+}
+.box-chamada .imagem {
+  position: relative;
+  z-index: 1;
+}
+.box-chamada .desc {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 15px 20px;
+  line-height: 1.1;
+}
+.box-chamada .text {
+  margin-bottom: 10px;
+}
+.box-chamada .link {
+  color: #FFF;
+}
+.box-chamada .plus {
+  text-align: right;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.box-chamada.chamada-left .desc {
+  background: #ffac2e;
+}
+.box-chamada.chamada-middle .desc {
+  background: #fc5c85;
+}
+.box-chamada.chamada-right .desc {
+  background: #0eb0df;
+}
+.box-banner-horizontal {
+  margin-bottom: 30px;
+}
 .imagem {
   display: inline-block;
   overflow: hidden;
@@ -169,6 +274,61 @@ CLASSES START
   vertical-align: middle;
   display: inline-block;
   background-image: url(../imagem/site/icon.png);
+}
+.lista-fornecedores > li {
+  float: left;
+  width: 20%;
+  text-align: center;
+}
+.media-home {
+  background: #e6e7e7;
+  line-height: 1.1;
+  margin-bottom: 30px;
+}
+.media-home .pull-left {
+  background: #98a343;
+  color: #FFF;
+  width: 160px;
+  text-align: center;
+}
+.media-home .pull-left .icone {
+  padding: 10px;
+  display: block;
+}
+.media-home .pull-left .title {
+  background: #7a813e;
+  display: block;
+  padding: 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1;
+  position: relative;
+}
+.media-home .pull-left .title .arrow {
+  position: absolute;
+  right: -9px;
+  top: 50%;
+  margin-top: -8px;
+}
+.media-home .media-body {
+  padding: 20px 10px 20px 20px;
+}
+.media-home blockquote {
+  border: 0;
+  padding-left: 0;
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
+.media-home blockquote footer {
+  text-align: right;
+  display: block;
+  font-size: 12px;
+}
+.media-home blockquote footer:before,
+.media-home blockquote small:before,
+.media-home blockquote .small:before {
+  content: " ";
 }
 .space {
   width: 1%;
