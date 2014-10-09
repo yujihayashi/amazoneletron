@@ -1,10 +1,11 @@
 .icon{ background:url("icon.png") top left no-repeat; }
 .icon-depoimento-lg{ width:81px; height:80px; background-position:-1px -1px; }
 .icon-atendimento-lg{ width:73px; height:80px; background-position:-1px -82px; }
-.icon-mag{ width:33px; height:25px; background-position:-1px -163px; }
-.icon-facebook{ width:12px; height:24px; background-position:-35px -163px; }
-.icon-phone{ width:35px; height:24px; background-position:-1px -189px; }
-.icon-instagram{ width:23px; height:22px; background-position:-48px -163px; }
-.icon-arrow-right{ width:9px; height:16px; background-position:-72px -163px; }
-.icon-plus-white{ width:16px; height:16px; background-position:-37px -189px; }
+.icon-losango{ width:40px; height:40px; background-position:-1px -163px; }
+.icon-mag{ width:33px; height:25px; background-position:-42px -163px; }
+.icon-facebook{ width:12px; height:24px; background-position:-1px -204px; }
+.icon-phone{ width:35px; height:24px; background-position:-14px -204px; }
+.icon-instagram{ width:23px; height:22px; background-position:-50px -204px; }
+.icon-arrow-right{ width:9px; height:16px; background-position:-1px -229px; }
+.icon-plus-white{ width:16px; height:16px; background-position:-11px -229px; }
 
